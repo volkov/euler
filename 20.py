@@ -1,7 +1,4 @@
 from functools import reduce
+from dsum import dsum
 f = reduce(lambda x,y: x*y,range(1,101))
-dsum=0
-while f > 0:
-  dsum+=f%10
-  f=f//10
-print(dsum)
+print(dsum(f))
