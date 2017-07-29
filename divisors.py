@@ -10,3 +10,8 @@ def divisors(n):
 
 def proper_divisors(n):
     return divisors(n)[:-1]
+
+def gcd(a,b):
+    while b:
+        a,b = b,a%b
+    return a
